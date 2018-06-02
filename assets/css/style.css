@@ -1,137 +1,112 @@
     /* This makes it so that everything get a property so that all the sizing is 
      included when width and height are applied- all included in total div space, notice the "*" symbol usage*/
 * {
-
+   
+    color: black;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+  }
 
+  .banner-top{
+    background-color: whitesmoke;
+  }
  /* Set all these unless otherwise told something different */
-body {
-    background: url(../images/dust_scratches.png);
-    font-size: 18px;
-    line-height: 34px;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#777;
+
+ #background{
+     background: #32383E;
+ }
+ .deck-1{
+     border-bottom-color: seashell;
+     background: #32383E;
+     
+ }
+ .deck-1,.deck-2{
+    
+    max-width: 90%;
+    margin: auto;
+    min-height: 40vh;
+    
+    
+}
+/* Card Colors */
+#card-color1{
+    background: #FFC41A;
+
+}
+#card-color2{
+    background: #FF7B0F;
+
+}
+#card-color3{
+    background:#EA4335;
+
+}
+#card-color4{
+    background:#3FE7AC;
+
+}
+#card-color5{
+   background: #FFE2F6;
+
+}
+#card-color6{
+    background:#F676C1;
+}
+
+
+.deck-2{
+    
+    background:cover;
+  
+    
    
+} 
+
+.black{
+    background:black;
 }
+@media (min-width:369px){
+    .wrapper{
+        min-height:calc(90vh);
+        overflow-x:hidden;
+        max-width: 100%;
 
- /* This is saying the width is the whole page but the whole thing has a max with of 960 and the margin will be nothing and centered. 
-    Clearing both is saying that if I give a float to some other element left or right, make sure that it is clear from other elements */
-.container {
-    width: 100%;
-    max-width:960px;
-    margin: 0 auto;
-}
+    }
 
-h1 {
-    margin-bottom: 20px;
-}
-
-p:last-child {
-    margin-bottom:0;
-}
-
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    color: #4aaaa5;
-    font-size: 30px;
-    line-height: 49px;
-    border-bottom: 3px solid #ddd;
-    padding-bottom: 20 px;
-}
-
-
-
-
-#logo {
-    background: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-
-}
-
-nav ul li a {
-    color: #999;
-    text-decoration: none;
-    margin-left: 15px;
-    border-left: 1px solid #efefef;
-    padding-left:15px;
+    .shadow{
+        min-height: 300px;
+    }
     
 }
 
-/* this is so that there is no boarder on the first element of the navbar*/
-nav a:first-child {
-    border-left: 0 none;
+
+#banner-bg{
+    /* background: rgba(238, 240, 128, 0.425) */
+    background: transparent;
+    padding:5vh;
+   
 }
 
-/* main */
-.main-container {
-    padding-top: 130px;
-
+#name-bg{
+    font-family: 'Molengo', sans-serif;
+    font-family: 'Courgette', cursive;
 }
-
-.main-section {
-    background: #fff;
-    padding: 30px;
-    margin: 0 0 40px 0;
-    border: 1px solid #ddd;
+#profile-pic{
+    max-height: 300px;
+    max-width:200px;
 }
-
-#profimg {
-    max-width:50%;
-    padding-right:10px;
+nav{
+    padding: 20px;
+    
 }
-
-/* sidebars */
-
-.sidebar {
-    background: #fff;
-    padding: 30px;
-    width: 100%;
-    max-width:270px;
-    float:right;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-
-h3, .sidebar, h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height:22px;
-}
-
-.social, .work {
-    width: 100%;
-    max-width: 100%;
-}
-
-
-
-.social li {
-    display: inline;
-}
-.social li img {
-    width: 30%;
-    max-width:100%;
-
-}
-
-/* .social:last-child {
-    margin-right: 0px;
-} */
 
 footer {
-    background: #666;
-    color: #fff;
-    padding: 30px 0px;
-    clear: both;
-    border-top: 8px solid #4aaaa5;
-    color: #ccc;
-    font-size: 12px;
-    text-align: center;
-    min-height: 100%;
+   
+    background-color: lightgrey;
+    padding-top:5px;
+    
 }
 
 

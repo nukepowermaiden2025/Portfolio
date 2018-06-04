@@ -6,7 +6,7 @@ var cards = [
         css:"card-color1",
         imgSrc:"https://media.giphy.com/media/Q8VKl8nT8UhFK/giphy.gif",
         href:"https://nukepowermaiden2025.github.io/GiphyWeek6/",
-        description:`Controling gif state with AJAX and jquery.`
+        description:`Users can add buttons that will make HTTP request to the GIPHY API upon selection. Clicks control the gifs movement state. Made with AJAX and jquery.  `
 
     },
     {
@@ -14,7 +14,7 @@ var cards = [
         css:"card-color2",
         imgSrc:"./assets/images/Jarvis.jpg",
         href:"https://github.com/nukepowermaiden2025/Jarvis",
-        description:`Location based Health Analysis with MVC Design Pattern`
+        description:`Location based Health Analysis developed with Javascript MVC Design Pattern, Passport.js, Zipcodes API`
     },
     {
         name:"Nellie's Bucket List",
@@ -24,25 +24,25 @@ var cards = [
         description:`Creative BucketList with MySQL and Handlebars`
     },
     {
-        name:"",
-        css:"card-color4",
-        imgSrc:"",
-        href:"",
-        description:""
-    },
-    {
-        name:"",
-        css:"card-color5",
-        imgSrc:"",
-        href:"",
-        description:""
-    },
-    {
-        name:"",
+        name:"Mentor Match Machine",
         css:"card-color6",
-        imgSrc:"",
-        href:"",
-        description:""
+        imgSrc:"./assets/images/mentor.jpg",
+        href:"https://powerful-sands-84010.herokuapp.com/",
+        description:"This is an app that will match compatibility of mentors and mentees based on the answers they submit to ten questions. Mentees are automatically signed up to become mentors themselves thus the creation of a 'machine'. The goal is the stimulate an existing culture of mentorship within an organization."
+    },
+    {
+        name:"Bamazon",
+        css:"card-color4",
+        imgSrc:"./assets/images/screen.jpg",
+        href:"https://github.com/nukepowermaiden2025/Bamazon#watch-the-demo",
+        description:"A Node CLI retail store application that is built with MySQL and the inquirer.js library"
+    },
+    {
+        name:"Gems Collector",
+        css:"card-color5",
+        imgSrc:"./assets/images/gems.jpg",
+        href:"https://nukepowermaiden2025.github.io/week-4-game/",
+        description:"A browser based game application that allows the user contiuous play-time, win or loose. Built with HTML5,CSS3,Javascript"
     }
 
 ]
@@ -50,17 +50,23 @@ var cards = [
 $(document).ready(function(){
     $(".render-cards").empty();
 
-    for(let i=0; i < 3; i++){
-        $(".render-cards").append(`
+    renderCards(0,3,".render-cards");
+    renderCards(3,7,".render-cards2");
+});
+   
+function renderCards(j,n,selectorName){
+    for(let i=j; i < n; i++){
+        $(`${selectorName}`).append(`
         <div id=${cards[i].css} class="card">
-            <img class="card-img-top" src=${cards[i].imgSrc} alt=${cards[i].name} image>
+        
+            <img class="card-img-bottom" src=${cards[i].imgSrc} alt=${cards[i].name} style="max-width:33vw;max-height:40vh">
             <div class="card-body">
             <h5 class="card-title">${cards[i].name}</h5>
             <p class="card-text">${cards[i].description}</p>
-            <a href=${cards[i].href} class="btn btn-secondary btn-sm" role="button" aria-disabled="true">Demo</a>
+            </div>
+            <div class="card-body">
+            <a href=${cards[i].href} class="btn btn-outline-dark btn-sm" role="button" aria-disabled="true">Demo</a>
             </div>
         </div>`);
     };
-
-});
-   
+}

@@ -10,7 +10,7 @@ html, body {
   }
 
   .banner-top{
-    background-color: whitesmoke;
+    background-color: white;
   }
  /* Set all these unless otherwise told something different */
 
@@ -22,6 +22,9 @@ html, body {
      background: #32383E;
      
  }
+ .deck-2{
+    background:cover;  
+} 
  .deck-1,.deck-2{
     
     max-width: 100%;
@@ -59,13 +62,7 @@ div[id^="card"] {
     padding:1vmin;
 }
 
-.deck-2{
-    
-    background:cover;
-  
-    
-   
-} 
+
 
 .black{
     background:black;
@@ -92,7 +89,7 @@ div[id^="card"] {
    
 }
 
-#name-bg{
+#name-bg, #connect{
     font-family: 'Molengo', sans-serif;
     font-family: 'Courgette', cursive;
 }
@@ -101,62 +98,18 @@ div[id^="card"] {
     max-width:200px;
 }
 nav{
-    padding: 20px;
-    
+    padding: 20px;   
 }
 
 footer {
    
-    background-color: lightgrey;
+    background-color:white;
     padding-top:5px;
     
 }
 
-
-/* portfolio */
-
-
-/* Contact */
-
-#contact-form ul {
-    margin-bottom: 10px;
+.social{
+    max-height: 5vh;
 }
 
-#contact-form li {
-    margin-bottom: 10px;
 
-}
- label,
- input[type=text],
- input[type=email],
- textarea {
-     display: block;
-     width:100%;    
- }
-
- input[type=text],
- input[type=email],
- textarea {
-     height: 35px;
-     border:1px solid #ddd;
-     padding: 0 10px;
-     font-size: 14px;
- }
-
- textarea {
-     height: 200px;
- }
-
-input[type=submit] {
-     background: #4aaaa5;
-     border: 0 none;
-     color: #fff;
-     font-size: 18px;
-     padding:10px 30px;
-     cursor: pointer; 
-}
-
-.small-icon{
-    max-width: 20%;
-    max-height:20%;
-}

@@ -14,7 +14,7 @@ var cards = [
         css:"card-color2",
         imgSrc:"./assets/images/Jarvis.jpg",
         href:"https://github.com/nukepowermaiden2025/Jarvis",
-        description:`Location based Health Analysis developed with Javascript MVC Design Pattern, Passport.js, Zipcodes API`
+        description:`Location based Health Analysis developed with Javascript MVC Design Pattern, Passport.js, Zipcodes API.`
     },
     {
         name:"Nellie's Bucket List",
@@ -35,14 +35,14 @@ var cards = [
         css:"card-color4",
         imgSrc:"./assets/images/screen.jpg",
         href:"https://github.com/nukepowermaiden2025/Bamazon#watch-the-demo",
-        description:"A Node CLI retail store application that is built with MySQL and the inquirer.js library"
+        description:"A Node CLI retail store application that is built with MySQL and the inquirer.js library."
     },
     {
         name:"Gems Collector",
         css:"card-color5",
         imgSrc:"./assets/images/gems.jpg",
         href:"https://nukepowermaiden2025.github.io/week-4-game/",
-        description:"A browser based game application that allows the user contiuous play-time, win or loose. Built with HTML5,CSS3,Javascript"
+        description:"A browser based game application that allows the user contiuous play-time, win or loose. Built with HTML5,CSS3,Javascript."
     }
 
 ]
